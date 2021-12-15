@@ -3909,6 +3909,13 @@
             <intent-filter android:priority="70">
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.android.settings.DEFAULT" />
+
+        <!-- Gaming Mode -->
+        <activity android:name=".preferences.game.GamingModeSettings"
+            android:label="@string/gaming_title"
+            android:exported="true">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
 

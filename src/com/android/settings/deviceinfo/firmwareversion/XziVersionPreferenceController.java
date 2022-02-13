@@ -26,23 +26,23 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
 
-public class ExtendedVersionPreferenceController extends BasePreferenceController {
+public class XziVersionPreferenceController extends BasePreferenceController {
 
     @VisibleForTesting
-    static final String EXTENDED_VERSION_PROPERTY = "ro.extended.display.version";
+    static final String XZI_VERSION_PROPERTY = "ro.xzi.display.version";
 
-    public ExtendedVersionPreferenceController(Context context, String preferenceKey) {
+    public XziVersionPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return !TextUtils.isEmpty(SystemProperties.get(EXTENDED_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
+        return !TextUtils.isEmpty(SystemProperties.get(XZI_VERSION_PROPERTY)) ? AVAILABLE : UNSUPPORTED_ON_DEVICE;
     }
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(EXTENDED_VERSION_PROPERTY,
+        return SystemProperties.get(XZI_VERSION_PROPERTY,
                 mContext.getString(R.string.device_info_default));
     }
 }

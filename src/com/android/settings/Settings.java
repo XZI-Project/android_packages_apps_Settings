@@ -326,7 +326,7 @@ public class Settings extends SettingsActivity {
      */
     public static class AppDashboardActivity extends SettingsActivity {}
 
-    // AospExtended Additions.
+    // XZI-Project Additions.
     public static class ExtensionsSettingsActivity extends SettingsActivity {}
 
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
